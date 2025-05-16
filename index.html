@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-box">
+    <h1 class="title">🎉 Fun Quiz 🎉</h1>
+
+    <div id="level-select">
+      <label for="level">Choose Difficulty:</label>
+      <select id="level">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+      <button id="startBtn">Start Quiz 🚀</button>
+    </div>
+
+    <div id="quiz" style="display:none;">
+      <h2 id="question">Question loading...</h2>
+      <div id="answers"></div>
+      <p id="timer">⏱️ Time Left: <span id="time">10</span>s</p>
+      <button id="retryBtn" style="display:none;">🔄 Retry</button>
+      <p id="score" style="display:none;"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
